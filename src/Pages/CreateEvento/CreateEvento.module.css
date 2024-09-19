@@ -1,0 +1,47 @@
+.main {
+    width: 100%;
+    height: auto; /* Deixe o conteúdo ditar a altura */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Bloco de cada evento */
+  .eventBlock {
+    width: 48%; /* Cada bloco ocupa aproximadamente metade da largura */
+    height: calc(80vh / 3 - 20px); /* Divide a altura da tela em 3 partes */
+    border-radius: 44px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    filter: brightness(0.9); /* Torna as imagens um pouco mais escuras para destacar o texto */
+  }
+  
+  /* Área de informações sobre o evento */
+  .eventInfo {
+    width: 100%;
+    height: 20%; /* A parte inferior com informações ocupa 20% da altura do bloco */
+    background-color: rgba(4, 150, 255, 0.8);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 44px;
+    border-bottom-right-radius: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilo para o título do evento */
+  .eventTitle {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Melhora a legibilidade do texto sobre imagens */
+  }
+  

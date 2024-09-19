@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --platinum: #e6e6e6;
+    --darkgray: #39393A;
+    --gray: #4b4b4C;
+    --darkblue: #2b2d42;
+    --blue: #0496FF;
+    --yellow: #ffcc00;
+    --black: #000000;
+}
+body{
+    font-family: "Poppins ", sans-serif ;
+}
+.container {
+ 
+    display: flex;
+  
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 70vh;
+    color: black;
+    
+}
+
+.p{
+  color: var(--yellow);
+  padding: 15px;
+}
+.sp{
+    color: var(--blue);
+    
+}
+
+.box {
+    width: 100%;
+    height: 60vh;
+    background-color: var(--platinum);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    width: 50%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.net, .vagas, .carreiras, .futuro, .events, .life {
+    display: flex;
+    align-items: center;
+    color: var(--black);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.emoji {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+.main{
+    width: 100%;
+    height: 40vh;
+}
+
+
+
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  .p{
+    font-size: 3em;
+  }
+  .bt{
+    background-color: var(--yellow);
+    width: 35%;
+    height: 4vh;
+    border-radius: 44px;
+  }

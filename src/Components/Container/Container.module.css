@@ -1,0 +1,16 @@
+/* Container.module.css */
+
+body{
+    max-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  max-height: fit-content;
+  min-width: 100vw;
+  background-color: #ffcc00; 
+}
+  

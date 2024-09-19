@@ -1,0 +1,108 @@
+/* Botão para abrir/fechar o sidebar */
+.toggleButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* Acima do sidebar */
+}
+
+/* Sidebar inicial (fechado) */
+.sidebar {
+    position: fixed;
+    left: -250px; /* Oculto fora da tela */
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: left 0.3s ease; /* Transição suave */
+    z-index: 1000;
+}
+
+/* Sidebar aberto */
+.sidebar.open {
+    left: 0; /* Traz o sidebar para a tela */
+}
+
+/* Container do logo */
+.logoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centraliza o logo horizontalmente */
+    padding: 20px;
+}
+
+/* Estilo da imagem do logo */
+.logo {
+    width: 60%; /* Ajuste o tamanho do logo conforme necessário */
+}
+
+/* Estilo do menu */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.menu > li {
+    position: relative;
+    width: 100%;
+}
+
+.menu > li > a {
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+.menuItem:hover > a {
+    background-color: #e0e0e0;
+}
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li a {
+    color: #3184ff; /* Azul no texto dos itens do submenu */
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: 150ms;
+}
+
+.submenu li a:hover {
+    color: #2563eb; /* Azul escuro no hover */
+    background-color: #f0f0f0;
+}
+
+.menuItem:hover .submenu {
+    display: block;
+}
+
+.text {
+    color: black;
+}
